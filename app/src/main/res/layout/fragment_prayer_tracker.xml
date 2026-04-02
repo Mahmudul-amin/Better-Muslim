@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/prayer_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prayer Tracker"
+        android:textSize="24sp"
+        android:layout_gravity="center" />
+
+    <CheckBox
+        android:id="@+id/check_fajr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fajr" />
+
+    <CheckBox
+        android:id="@+id/check_dhuhr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dhuhr" />
+
+    <CheckBox
+        android:id="@+id/check_asr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asr" />
+
+    <CheckBox
+        android:id="@+id/check_maghrib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maghrib" />
+
+    <CheckBox
+        android:id="@+id/check_isha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isha" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_prayer_history"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="16dp" />
+
+</LinearLayout>
